@@ -1859,6 +1859,10 @@ var mySwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__.default('.s1', {
   autoplay: 4000,
   slidesPerView: 4,
   breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
     640: {
       slidesPerView: 2,
       spaceBetween: 20
