@@ -100,3 +100,4 @@
 
 @tailwind utilities;
 @import "../../node_modules/swiper/swiper-bundle.css";
+@import "../../node_modules/lightbox2/dist/css/lightbox.min.css";

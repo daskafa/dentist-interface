@@ -4,6 +4,7 @@ require('./bootstrap');
 import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 
+
 var mySwiper = new Swiper('.s1', {
     loop: true,
     pagination: {

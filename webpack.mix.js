@@ -15,3 +15,6 @@ mix.js("resources/js/app.js", "public/js")
     .postCss("resources/css/app.css", "public/css", [
      require("tailwindcss"),
     ]);
+
+
+mix.copy("node_modules/lightbox2/dist/js/lightbox.js", "public/js/")

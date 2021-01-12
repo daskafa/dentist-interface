@@ -19,6 +19,7 @@
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
     },
     "dependencies": {
+        "lightbox2": "^2.11.3",
         "swiper": "^6.4.5"
     }
 }

@@ -13,59 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-
-Route::get('/tedavilerimiz', function(){
-    return view('therapy');
-});
-Route::get('/tedavilerimiz/discekimi', function(){
-    return view('discekimi');
-});
-Route::get('/tedavilerimiz/implant', function(){
-    return view('implant');
-});
-Route::get('/tedavilerimiz/kanaltedavisi', function(){
-    return view('kanaltedavisi');
-});
-Route::get('/tedavilerimiz/disbeyazlatma', function(){
-    return view('disbeyazlatma');
-});
-Route::get('/tedavilerimiz/cocukdishekimligi', function(){
-    return view('cocukdishekimligi');
-});
-Route::get('/tedavilerimiz/dolgu', function(){
-    return view('dolgu');
-});
-Route::get('/tedavilerimiz/estetikdishekimligi', function(){
-    return view('estetikdishekimligi');
-});
-Route::get('/tedavilerimiz/disetitedavileri', function(){
-    return view('disetitedavileri');
-});
-Route::get('/tedavilerimiz/zirkonyum', function(){
-    return view('zirkonyum');
-});
-Route::get('/tedavilerimiz/porselen', function(){
-    return view('porselen');
-});
-
-
-
-
-Route::get('/fotografgalerisi', function(){
-    return view('fotografgalerisi');
-});
-Route::get('/insankaynaklari', function(){
-    return view('insankaynaklari');
-});
-Route::get('/iletisim', function(){
-    return view('iletisim');
-});
-Route::get('/insankaynaklari', function(){
-    return view('insankaynaklari');
-});
-
+Route::view('', 'welcome')->name('home');
+Route::view('/tedavilerimiz', 'therapy')->name('therapy');
+Route::view('/hakkimizda', 'hakkimizda')->name('hakkimizda');
+Route::view('/tedavilerimiz/discekimi', 'discekimi')->name('discekimi');
+Route::view('/tedavilerimiz/implant', 'implant')->name('implant');
+Route::view('/tedavilerimiz/kanaltedavisi', 'kanaltedavisi')->name('kanaltedavisi');
+Route::view('/tedavilerimiz/disbeyazlatma', 'disbeyazlatma')->name('disbeyazlatma');
+Route::view('/tedavilerimiz/cocukdishekimligi', 'cocukdishekimligi')->name('cocukdishekimligi');
+Route::view('/tedavilerimiz/dolgu', 'dolgu')->name('dolgu');
+Route::view('/tedavilerimiz/estetikdishekimligi', 'estetikdishekimligi')->name('estetikdishekimligi');
+Route::view('/tedavilerimiz/disetitedavileri', 'disetitedavileri')->name('disetitedavileri');
+Route::view('/tedavilerimiz/zirkonyum', 'zirkonyum')->name('zirkonyum');
+Route::view('/tedavilerimiz/porselen', 'porselen')->name('porselen');
+Route::view('/fotografgalerisi', 'fotografgalerisi')->name('fotografgalerisi');
+Route::view('/iletisim', 'iletisim')->name('iletisim');
+Route::view('/insankaynaklari', 'insankaynaklari')->name('insankaynaklari');
